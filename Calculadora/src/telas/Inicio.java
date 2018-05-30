@@ -135,6 +135,11 @@ public class Inicio extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Esta calculadora está bloqueada.");
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        new TelaPotenciacao().setVisible(true);
+    } 
+    
     /**
      * @param args the command line arguments
      */
