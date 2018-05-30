@@ -5,8 +5,9 @@ package telas;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import telas.telaSoma;
-import telas.TelaRaizQuadrada;
+import javax.swing.JOptionPane;
+import telas.*;
+
 /**
  *
  * @author aluno
@@ -62,6 +63,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton4.setText("Dar Saída");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(255, 204, 0));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -84,10 +90,12 @@ public class Inicio extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addGap(196, 196, 196))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4)
-                .addContainerGap())
+                .addGap(25, 25, 25))
+
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,6 +131,9 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        JOptionPane.showMessageDialog(null, "Esta calculadora está bloqueada.");
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
